@@ -1,7 +1,7 @@
 import { Routes, Route, BrowserRouter } from "react-router-dom";
-import { Home } from "./pages/home/Home";
-import { List } from "./pages/list/List";
-import { Hotel } from "./pages/hotel/Hotel";
+import Home from "./pages/home/Home";
+import List from "./pages/list/List";
+import Hotel from "./pages/hotel/Hotel";
 
 function App() {
   return (
