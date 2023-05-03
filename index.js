@@ -9,6 +9,7 @@ const app = express();
 dotenv.config(); // For accessing data in .env file
 
 /* Middlewares. */
+app.use(express.json()); // To sent direct JSON request.
 app.use("/api/auth", authRoute);
 app.use("/api/users", usersRoute);
 app.use("/api/hotels", hotelsRoute);
