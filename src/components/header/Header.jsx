@@ -4,6 +4,8 @@ import {
   faPlane,
   faTaxi,
   faCar,
+  faCalendarDays,
+  faPerson,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./Header.css";
@@ -40,6 +42,27 @@ const Header = () => {
           with a free LamaBooking account.
         </p>
         <button className="headerBtn">Sign in / Register</button>
+        <div className="headerSearch">
+          <div className="headerSearchItem">
+            <FontAwesomeIcon icon={faBed} className="headerIcon" />
+            <input
+              type="text"
+              placeholder="Where are you going?"
+              className="headerSearchInput"
+            />
+          </div>
+          <div className="headerSearchItem">
+            <FontAwesomeIcon icon={faCalendarDays} className="headerIcon" />
+            <span className="headerSearchText">date to date</span>
+          </div>
+          <div className="headerSearchItem">
+            <FontAwesomeIcon icon={faPerson} className="headerIcon" />
+            <span className="headerSearchText">2 adults 2 children 1 room</span>
+          </div>
+          <div className="headerSearchItem">
+            <button className="headerBtn">Search</button>
+          </div>
+        </div>
       </div>
     </div>
   );
