@@ -7,7 +7,6 @@ dotenv.config(); // For accessing data in .env file
 const connect = async () => {
   try {
     await mongoose.connect(process.env.MONGO);
-
     console.log("Connected to mongoDB.");
   } catch (error) {
     throw error;
