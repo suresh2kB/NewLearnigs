@@ -30,6 +30,7 @@
 }
 .headerDesc{
     margin: 20px 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .headerBtn{
     background-color: #0071c2;
@@ -74,4 +75,9 @@
 .headerSearchText{
     color: lightgray;
     cursor: pointer;
+}
+
+.date{
+    position: absolute;
+    top: 50px;
 }
